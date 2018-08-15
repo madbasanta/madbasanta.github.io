@@ -2,9 +2,19 @@
 <html>
 <head>
 	<title>Flappy</title>
+	<style type="text/css">
+		#board{position: absolute;left: 850px;top: 20px;}
+	</style>
 </head>
 <body>
+	<div id="board">
+		<h2>Score : <span id="score">0</span></h2>
+		<h2 id="h2pass">Bar Passed : <span id="passed">0</span></h2>
+		<h2 id="h2die">Bar Hitted : <span id="die">0</span></h2>
+	</div>
 	<script type="text/javascript" src="p5.min.js"></script>
 	<script type="text/javascript" src="sketch.js"></script>
+	<script type="text/javascript" src="bird.js"></script>
+	<script type="text/javascript" src="pipes.js"></script>
 </body>
 </html>
