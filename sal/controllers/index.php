@@ -16,6 +16,6 @@
 
 //$visitors = $app["database"]->all('visitors')[0];
 // $count = $visitors->visitors;
-$count = 2;
-
-require 'views/index.view.php';
+//$count = 2;
+echo "this is test";
+//require 'views/index.view.php';
