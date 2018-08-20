@@ -1,10 +1,10 @@
 <?php
 return [
      'database' => [
-          'name' => 'sal',
-          'username' => 'root',
-          'password' => 'root',
-          'connection' => 'mysql:host=127.0.0.1',
+          'name' => 'saveleo',
+          'username' => 'saveleo',
+          'password' => 'password*',
+          'connection' => 'mysql:host=den1.mysql4.gear.host',
           'options' => [
                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
           ]
