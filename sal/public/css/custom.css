@@ -1,0 +1,254 @@
+body{
+	background: #e9ecef;
+}
+#nav{
+	background: linear-gradient(to bottom, #237A57, #093028);
+}
+#nav .navbar-brand{
+	position: relative;
+}
+#nav .navbar-brand img{
+	position: absolute;
+	width: 80px;
+	top: -15%;
+	right: 25%;
+}
+#nav .navbar-nav a{
+	color: #ccc;
+	position: relative;
+}
+#nav .navbar-nav a:after{
+	content: "";
+	position: absolute;
+	right: 100%;
+	height: 3px;
+	bottom: 5px;
+	left: 0;
+	background: #ccc;
+	transition: 300ms;
+}
+#nav .navbar-nav a:before{
+	content: "";
+	position: absolute;
+	top: 100%;
+	width: 3px;
+	right: 5px;
+	bottom: 0;
+	background: #ccc;
+	transition: 300ms;
+	transition-delay: 300ms;
+}
+#nav .navbar-nav a:hover{
+	color: #fff;
+}
+
+#nav .navbar-nav a:hover:after{
+	right: 0;
+}
+#nav .navbar-nav a:hover:before{
+	top: 20%;
+}
+.carousel-caption{
+	top: 50%;
+}
+.carousel-caption h2{
+	background: rgba(0,0,0,0.5);
+	min-height: 60px;
+	line-height: 60px;
+}
+.person-name{
+	position: relative;
+	cursor: pointer;
+}
+.person-name:after{
+	content: "▙";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left: calc(50% - 8px);
+	bottom: 0;
+	font-size: 10px;
+	transform: rotate(-45deg);
+	color: #fff;
+}
+.person-dropdown{
+	position: absolute;
+	max-width: 100%;
+	min-width: 130px;
+	display: none;
+	background: #fff;
+	border-radius: 5px;
+	top: calc(100% - 8px);
+	text-align: center;
+}
+.person-dropdown a.nav-link{
+	color: rgba(0,0,0,0.8) !important;
+}
+.person-dropdown li:hover a.nav-link{
+	color: #237A57 !important;
+}
+#nav .navbar-nav a:hover:after,
+#nav .navbar-nav a:hover:before{
+	background: #237A57;
+}
+
+/*************************
+ * register / login form *
+ *************************/
+#register, #login{
+	padding: 30px 10px;
+}
+#register .card{
+	max-width: 800px;
+	margin: 0 auto;	
+}
+#login .card{
+	max-width: 600px;
+	margin: 0 auto;
+}
+#register .card-header,
+#login .card-header{
+	background: #237A57;
+	color: #fff;
+}
+#login .row{
+	margin-top: 15px;
+}
+#login label{
+	padding-top: 5px;
+}
+.btn-primary{
+	background: #237A57;
+}
+@media (max-width: 575px){
+	#login .text-right{
+		text-align: left !important;
+	}
+}
+#register input[type="checkbox"]{
+	-webkit-appearance: none;
+	border: none;
+}
+#register input[type="checkbox"]:after{
+	content: "";
+	position: absolute;
+	height: 35px;
+	width: 35px;
+	left: calc(50% - 17.5px);
+	border-radius: 50%;
+	border: 5px solid #b9b9bd;
+}
+#register input[type="checkbox"]:checked:after{
+	content: "✔";
+	text-align: center;
+	line-height: 25px;
+	border-color: green;
+	background: #f5f5f5;
+}
+#register input[type="checkbox"]:hover:after{
+	border-color: green;
+}
+
+/******************
+* css for footer *
+***************** */
+#page-footer{
+	background: linear-gradient(to bottom, #237A57, #093028);
+}
+
+
+
+/* random css */
+
+.show-modal{
+	cursor: pointer;
+}
+.show-modal:hover{
+	color: green;
+}
+.modal-dialog{
+	transform: translateY(25%) !important;
+}
+
+.show-modal.image{
+	position: absolute;
+	left: calc(50% - 8px);
+	bottom: 2px;
+}
+.pointer:hover{
+	cursor: pointer;
+}
+/*******************
+ *	css for slider *
+ ******************/
+ #slider{
+ 	background: lightgray;
+ }
+ #slider > div.m-auto{
+ 	overflow: hidden;
+ 	position: relative;
+ 	height: 158px;
+ }
+ #slider .row{
+ 	position: absolute;
+ 	width: 400vw;
+ 	height: 100%;
+ 	top: 0;
+ 	left: 20px;
+ }
+  #slider .row .slides{
+  	max-width: 200px;
+  	margin: 0 10px;
+  	height: 100%;
+  	display: flex;
+  }
+  #slider .row .slides img{
+  	margin: auto;
+  }
+
+/*css for chat on footer*/
+#chats{
+	position: absolute;
+	width: 92%;
+	background: #f5f5f5;
+	left: 4%;
+	height: 400px;
+	bottom: 0;
+	display: none;
+}
+.message-container{
+	height: 280px;
+	overflow-y: auto;
+	background: #343a40;
+}
+.message-container .image{
+	height: 40px;
+	width: 40px;
+	float: left;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	overflow: hidden;
+}
+.message-container .message{
+	float: left;
+	min-height: 40px;
+	border-radius: 15px;
+	background: #f1f1f1;
+	width: calc(100% - 80px);
+	font-size: 95%;
+	line-height: 17px;
+}
+.send-btn{
+	height: 60px;
+	width: 40px;
+	float: right;
+	width: 50px;
+	text-align: center;
+	background: transparent;
+	border-color: transparent;
+}
+
+.send-btn i{
+	font-size: 35px;
+	color: #fff;
+}
