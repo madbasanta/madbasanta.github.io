@@ -4,7 +4,7 @@ return [
           'name' => 'saveleo',
           'username' => 'saveleo',
           'password' => 'password*',
-          'connection' => 'mysql:host=https://den1.mysql4.gear.host',
+          'connection' => 'mysql:host=http://den1.mysql4.gear.host',
           'options' => [
                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
           ]
